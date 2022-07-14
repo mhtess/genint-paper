@@ -345,7 +345,7 @@ Our formal modeling predicts gradience in interpretations and that such very wea
 
 This paper is organized as follows.
 In the first section, we describe the model of generic meaning proposed by \citeA{Tessler2019psychrev} and show how it makes predictions for prevalence interpretations from a generic statement.
-We additionally describe alternative models that predict prevalence interpretations with different assumptions about the meaning of a generic; we also formalize a new model that predicts prevalence by assuming generics serve as a kind of direct conduit to conceptual knowledge.
+We additionally describe alternative models that predict prevalence interpretations with different assumptions about the meaning of a generic; we also formalize a new conceptual-based alternative model that predicts prevalence by assuming generics serve as a kind of direct conduit to conceptual knowledge.
 We compare these formal hypotheses in their abilities to predict and provide a parsimonious explanation for generic interpretation data from three experiments, in which we both measure prior beliefs and generic interpretations.
 %and incorporate it into the Rational Speech Act modeling framework \cite{Frank2012, Goodman2016}.
 %We compare literal and pragmatic versions of the model against additional control models that use the same prior knowledge but which update their beliefs via different semantic mechanisms: fixed-thresholds analogous to the semantics of quantifiers like \emph{some} and \emph{most}.
@@ -448,7 +448,7 @@ We see inferences about prevalence that tilt toward higher values.
  The uncertain-threshold generics model produces inference about prevalence that depend upon prior beliefs about the property $P_f(r_{kf})$. 
  Prevalence prior distributions that display more structure (e.g., multimodal distributions) receive interpretations that are highly reflective of that underlying structure.
  This prior-sensitive interpretation is a desirable feature of the model because generics operate over rich intuitive theories about properties and are believed to receive interpretations that are sensitive to those theories \cite{Leslie2007, Gelman2010:essentialist, Cimpian2010theory, Rhodes2012, Prasada2013}. 
- For instance, biological properties like \emph{flying} (as in \emph{Ducks fly}) manifest in many categories with 0\% prevalence (e.g., 0\% of dogs, rabbits, etc\ldots{} \emph{fly}), but are present in other categories in very high proportions (robins, falcons, pterodactyls, etc\ldots{}); hence, a listener's prior distribution over the prevalence of \empigwould have at least two modes: one around 0\% and another near 100\% (Figure~\ref{fig:modelSimulations}B, second row).
+ For instance, biological properties like \emph{flying} (as in \emph{Ducks fly}) manifest in many categories with 0\% prevalence (e.g., 0\% of dogs, rabbits, etc\ldots{} \emph{fly}), but are present in other categories in very high proportions (robins, falcons, pterodactyls, etc\ldots{}); hence, a listener's prior distribution over the prevalence of flying would have at least two modes: one around 0\% and another near 100\% (Figure~\ref{fig:modelSimulations}B, second row).
  %\footnote{
 %	Technically, people may have graded degrees of belief about the prevalence and hence the mode at 0\% might not be a Delta distribution at exactly 0\%. That is, such a psychological model can assume that there are categories in which almost no members have the property (e.g., a dog flying), but that the existence of such an individual is not entirely impossible.}
 	%Bayesians in general do not like to assign 0 probabilities to outcomes, which is what a mode at 0\% would entail for this cognitive model. 
@@ -480,28 +480,30 @@ B: Comparison of uncertain threshold and fixed-threshold models for four differe
 \hypertarget{alternative-semantic-models}{%
 \subsection{Alternative models}\label{alternative-semantic-models}}
 
-We compare our uncertain threshold model to two sets of alternative models, which operate with the same prior beliefs, but which update them according to different likelihood functions. 
+We compare our uncertain threshold model to two sets of alternative models, which utilize the same prior beliefs (which vary by property), but update them according to different likelihood functions. 
 
 \subsubsection{Alternative semantics}
 
 %Many empirical studies in psychology treat the ``statistical hypothesis'' about the meaning of a generic to be tantamount to a quantifier with a fixed threshold on prevalence, and consequently report evidence against this ``statistical hypothesis'' \cite{Prasada2006, Leslie2008, Cimpian2010, Khemlani2012, Prasada2013, Brandone2014}.
-Many empirical studies in psychology consider a ``statistical hypothesis'' about the meaning of a generic, which is tantamount to a quantifier with a fixed threshold on prevalence \cite{Prasada2006, Leslie2008, Cimpian2010, Khemlani2012, Prasada2013, Brandone2014}.
+Many empirical studies in psychology that try to address the meaning of generics consider a ``statistical hypothesis'', which is operationalized by a quantifier semantics with a fixed threshold on prevalence \cite{Prasada2006, Leslie2008, Cimpian2010, Khemlani2012, Prasada2013, Brandone2014}.
 We thus compare the uncertain threshold model to alternative models that update beliefs according to a fixed-threshold semantics (\emph{a la} quantifiers \emph{some} or \emph{most}). 
+Note that these are not necessarily models of quantifier interpretations, since such models would presumably include pragmatic implicatures (e.g., that \enquote{some} often implies \enquote{not all}). Such a model can be implemented in the same probabilistic modeling framework \cite{Goodman2013} but does not directly address our question of whether a fixed-threshold semantics is tenable for generics.
+
 To isolate the contribution of the semantics model,  we endow the alternative models with the same background knowledge in the form of the prevalence prior distribution \(P_f(r_{kf})\).
 Models with a fixed semantics are given by:
 \begin{eqnarray}
 %L_0^{some}(r \mid u) \propto  P(r \mid r > 0)  \label{eq:someModel}
 P (r_{kf} \mid r_{kf} >  \theta^*) \propto \delta_{[r_{kf} > \theta^*]} \cdot P_f(r_{kf})  \label{eq:L0fixed}
 \end{eqnarray}
-If $\theta^* = 0$, then the model is analogous to a literal interpretation for \emph{some}, which rules out the lowest possible prevalence level ($0\%$).\footnote{Note that a full model of quantifier interpretation would include their pragmatic interpretations (e.g., that \enquote{some} often implies \enquote{not all}). Such a model can be implemented in the same probabilistic modeling framework \cite{Goodman2013} but does not directly address our question of whether a fixed-threshold semantics is tenable for generics.} 
+If $\theta^* = 0$, then the model is analogous to a literal interpretation for \emph{some}, which rules out the lowest possible prevalence level ($0\%$).
 If $\theta^* = 0.5$, the model would be analogous to \emph{most}, with a literal meaning meaning \emph{more than half}. 
 Other fixed thresholds are possible as well (e.g., $\theta^* = 0.25$; \enquote{more than a quarter}).
-Predictions of a few of these control models are shown in Figure~\ref{fig:modelSimulations}B.
-We compare our uncertain threshold model to fixed-threshold models with different threshold values, including the best possible threshold that we determine by fitting $\theta^*$ to the data.
+We consider the best possible fixed-threshold model by fitting $\theta^*$ to the data.
+We also compare to various other models with different threshold values to better understand the behavior of this family of models (Figure~\ref{fig:modelSimulations}B)
 %\ndg{might be worth saying here that we'll fit $\theta^*$ to data to give this family of models the best shot?}
 
-A model that assumes a fixed threshold of $\theta^*$ places zero probability on any response less than $\theta^*$.
-In case there are ratings in the experimental data sets that are less than $\theta^*$, we must supplement these models with an extrinsic noise process in order for this model to actually generate predictions for those data; that is, with some probability, we will assume participants respond at random.
+One technical nuisance for models with fixed-threshold semantics is that they place zero probability on any response less than $\theta^*$.
+To accommodate ratings in the experimental data sets that are less than $\theta^*$, we supplement these models with an extrinsic noise process in order for this model to actually generate predictions for those data; that is, with some probability, we will assume participants respond at random.
 This noise probability parameter will serve as an additional free parameter for the fixed-threshold control models. 
 %We infer this noise probability parameter from the data for the fixed threshold models.
 
@@ -514,25 +516,34 @@ This comparison informs us as to whether or not participants actually update the
 
 \subsubsection{Reified kinds}
 
-Conceptual accounts of generics look beyond prevalence to model generic meaning \cite{Leslie2008, Cimpian2010, Khemlani2012, Prasada2013, Csibra2015}. This approach views conceptual knowledge in the mind as the determining factor of the generic truth conditions (what makes them true or false). For the inverse problem --- learning from generic language --- these accounts would say that what is learned from a generic statement like \emph{Dogs bark} is that dogs ``are the kind of thing that bark'', where the property has some interpretation inside of a conceptual model of the world \cite<e.g., as a generic belief; >{Prasada2000}. This approach does not make direct predictions about how implied prevalence should vary as a function of the property being predicated, so we take a step to formalize such a ``reified kinds'' view of generics.
+Conceptual accounts of generics look beyond prevalence to model generic meaning \cite{Leslie2008, Cimpian2010, Khemlani2012, Prasada2013, Csibra2015}. 
+These approaches view the meaning of generics as inextricably tied to conceptual structures of the mind. 
+For the problem of generic interpretation, these accounts would say that what is learned from a generic statement like \emph{Dogs bark} is that dogs ``are the kind of thing that bark'', where the property has an interpretation inside of a conceptual model of the world \cite<e.g., as a generic belief; >{Prasada2000}. This approach does not make direct predictions about how generics should impact the prevalence of the property in the category or how that should vary as a function of the property being predicated, so we take a step to formalize such a ``reified kinds'' view of generics.
 
-If there exists a predictable mapping between the meaning ``X is the kind of thing that Ys'' and prevalence, then the representation of prevalence (i.e., the prevalence prior) must be able to be partitioned into two clusters: the kinds that do possess Y and the kinds that do not possess Y. 
-Therefore, the distribution over all kinds will be a mixture distribution of those that have Y and those that do not have Y. 
-Under such a model, the generic would select the higher mixture component (i.e., the mixture component that has the higher mean prevalence value).
+While remaining agnostic as to the format of conceptual structures, we posit that if there exists a predictable mapping between the supposed generic meaning ``X is the kind of thing that Ys'' and prevalence, then the representation of prevalence (i.e., the prevalence prior) must be able to be partitioned into two clusters: one cluster representing the kinds that do possess Y and another cluster representing the kinds that do not possess Y. 
+Therefore, a probability distribution over all kinds will be a mixture distribution of those that have Y and those that do not have Y. 
+Assuming each kind is associated with some level of prevalence for the property, the generic would select the mixture component that has the higher average prevalence.
+In this way, ``X is the kind of thing that Ys'' means ``X is a member of the set of things which have greater prevalence of entities that Y''.
 For example, if the prevalences from the components are approximated with Beta distributions (as in Figure \ref{fig:modelSimulations}B), the prior would take the following form:
 \begin{eqnarray}
 P_f(r_{kf}) = \phi \cdot \text{Beta}(\gamma_1, \xi_1) + (1-\phi)\cdot \text{Beta}(\gamma_2, \xi_2)
 % P (r_{kf} \mid u) \propto \cdot P_f(r_{kf})  \label{eq:kinds}
 \end{eqnarray}
 \noindent where $\gamma$ represents the mean of the Beta distribution and $\xi$ is the dispersion (or inverse variance).
-Assume, without lost of generality, that $\gamma_2 > \gamma_1$. Then, the interpretation of the generic in terms of prevalence would simply be:
+Then, the interpretation of the generic in terms of prevalence would simply be:
 %
 \begin{eqnarray}
 P (r_{kf} \mid u) \propto  \text{Beta}(\gamma_2, \xi_2) \label{eq:rk}
 \end{eqnarray}
 %
-The \emph{Reified kinds} model is a qualitatively different kind of model than the threshold based models, because \emph{Reified kinds} relies upon a particular assumption about the structure of prior knowledge (i.e., that it is a mixture distribution). The threshold models are compatible with such a view of the structure of prior knowledge, but they do not require it and would be compatible with other, unstructured views of prior knowledge. 
-The predictions of the \emph{Reified kinds} model are also only subtly different from those of the \emph{Uncertain threshold} model. 
+\noindent where $\gamma_2 > \gamma_1$. 
+
+The \emph{Reified kinds} model is a kind of conceptual, model-free baseline model.
+It is a qualitatively different kind of generic interpretation model than the threshold based models, because the semantics of generics in \emph{Reified kinds} does not make reference to individual values along the prevalence scale, but instead targets the structural aspects of prior knowledge and aggregate statistics of prevalence (i.e., the means of the mixture components $\gamma_1, \gamma_2$) . 
+%\emph{Reified kinds} relies upon a particular assumption about the structure of prior knowledge (i.e., that it is a mixture distribution). 
+This kind of conceptual model could be dispreferred on \emph{a priori} grounds because it requires a particular structure in the prior (i.e., the two-component mixture model) and it is not obvious how to  generalize it to different kinds of structured knowledge (e.g., if the prior was a mixture model composed of three components, which of the two higher prevalence components should the listener sample from?).
+
+We observe that the predictions of the \emph{Reified kinds} model are different from those of the \emph{Uncertain threshold} model, but only subtly so.
 Thus, we turn to a series of quantitative experiments designed with the purpose of teasing apart the models. 
 
 %prevalence prior is modeled as a mixture distribution  then a straightforward decision-rule for determining the prevalence implied by the generic would be to select the component of that mixture distribution which has the highest mean value. 
@@ -605,9 +616,9 @@ Thus, we turn to a series of quantitative experiments designed with the purpose 
 \hypertarget{overview-of-experiments}{%
 \section{Overview of Experiments}\label{overview-of-experiments}}
 
-Our models of generic interpretation predict that the interpretations of generics should vary with the prevalence prior for the property in question.
-Experiment 1 is a large scale version of \citeA{Cimpian2010}'s \emph{implied prevalence} task, with sufficiently dense measurements on the by-item level to reveal graded, quantitative variability among interpretations of generics of different properties. 
-Experiment 2 is a replication and extension of \citeA{Cimpian2010}'s result that implied prevalence varies between generics about biological properties (in particular, body parts with color modifiers e.g., \emph{yellow fur}) and accidental properties (e.g., \emph{fungus-covered claws}).
+\citeA{Tessler2019psychrev}'s listener model for generic interpretations, as well as the various alternatives we outline above, provide quantitative predictions about the prevalence interpretations of generics and how that should vary with the prevalence prior for the property in question.
+Experiment 1 is a large-scale test of the uncertain threshold listener model and its alternatives. with sufficiently dense measurements on the by-item level to reveal graded, quantitative variability among interpretations of generics of different properties. 
+Experiment 2 investigates how higher-order knowledge of properties (e.g., intrinsic vs. accidental properties) influence prevalence interpretations from generics, first identified by \citeA{Cimpian2010}.
 %; this study serves to validate that the paradigm can elicit fine-grained quantitative variability, which we will build on to test the computational models.
 %\citeA{Cimpian2010} reported differences 
 %Our Preliminary Experiment 
@@ -616,15 +627,15 @@ Experiment 3 is a test of the causal influence of prevalence priors on generic i
 Each of our experiments is divided into two parts. 
 In Part A (Expts.~1a, 2a, 3a), we measure participants' prior beliefs about the prevalence of the features used in our stimuli (e.g., the prior probabilities of different levels of prevalence of the feature \emph{likes to cuddle}). %; we do this by asking about the prevalence of the feature among a variety of alternative, familiar categories (e.g., \emph{what percentage of \{cats, mice, elephants, ...\} like to cuddle?}).
 In Part B (Expts.~1b, 2b, 3b), we measure the prevalence implied by a generic about a novel categories (e.g., \emph{Dorbs like to cuddle}). 
-We then perform a series of quantitative analyses aimed at predicting the prevalence implied by the generic (Part B) from the prior distribution of prevalence (Part A), assuming different models of belief-updating from a generic (i.e., functions that update a prior distribution into a posterior distribution on prevalence given the generic statement). 
-The comparison of different formal models of generic interpretation using the same elicited prior knowledge allows us to provide evidence for a particular model of generic interpretation, while precisely articulating the effect of prior knowledge. 
+We then perform a series of quantitative analyses aimed at predicting the prevalence implied by the generic (Part B) from the prior distribution of prevalence (Part A), assuming different models of interpretation from a generic (i.e., functions that update a prior distribution into a posterior distribution on prevalence given the generic statement). 
+By comparing different formal models using the same elicited prior knowledge, we are able to provide evidence for a particular model of generic interpretation, while simultaneously articulating and accounting for the influence of prior knowledge. 
 
 The sample size, exclusion criteria, and planned statistical contrasts for Expts.~1 \& 3 were pre-registered on the Open Science Framework.
 All cognitive and Bayesian data analytic models were implemented in the probabilistic programming language WebPPL \cite{dippl}. 
 All data, analysis scripts, models, and links to experiments and pre-registration reports can be found at \url{www.github.com/mhtess/generic-interpretation}.
 
 \hypertarget{experiment-1}{%
-\section{Experiment 1: Variability in Generic Interpretation}\label{experiment-1}}
+\section{Experiment 1: Large-scale Elicitation of Generic Interpretations}\label{experiment-1}}
 
 This experiment is designed to test models of generic interpretation by measuring the prevalence implied by a generic about a novel kind, using a diverse set of properties.
 We first elicit participants' prior beliefs about the likely prevalence levels expected for these properties (Expt. 1a).
