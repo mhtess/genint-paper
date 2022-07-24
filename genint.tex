@@ -1767,19 +1767,11 @@ For example, \citeA{armstrong1983some} showed that one can elicit gradience from
 Gradience in property prevalence interpretations (e.g., how many wugs have seizures), which we examine in this paper, is distinct, however, from gradience in property knowledge (e.g., whether or not an individual instance or episode could be a gradient exemplar of a property such as a seizure). Our results cannot speak as to whether or not property knowledge \emph{per se} is gradient, just that knowledge of prevalence is gradient. Prevalence knowledge being gradient is not particularly surprising given that the underlying construct is itself gradient (i.e., prevalence is a probability or frequency, which is a number between 0 - 1). 
 }
 
-\subsection{The relationship between generics, the prevalence prior, and concepts}
 
 
-A dominant view in psychology is that the meaning of generic statements cannot be reduced to statistical information about the prevalence of the feature in the category \cite<e.g.,>{Leslie2008, Cimpian2010, Khemlani2012, Prasada2013}. 
-This conclusion is often arrived at by considering implicitly only fixed-threshold models of a prevalence-based semantics.
-Our comparisons to models that assume fixed-thresholds support this narrow conclusion, that a fixed-threshold semantics for generics is difficult to support given the data.
-The broader conclusion --- rejecting all possible semantic models based on prevalence --- is not warranted, however (see also \citeNP{kochari2020generics} for a similar argument).
 
-The meanings of many expressions in natural language depend inextricably on context. 
-For example, gradable adjectives like \emph{tall} or \emph{expensive} do not convey a single precise quantity of height or price (e.g., an expensive watch lies at a different price-point than an expensive hamburger), and yet we do not draw the conclusion that the core meaning of \emph{tall} has nothing to do with height or that the meaning of \emph{expensive} is not really about the price of the object.
-The meanings of gradable adjectives are often arrived at by considering a comparison class of other objects of the same type \cite<e.g., an expensive hamburger is one that has a price that is high relative to other hamburgers;>{Kennedy2007} or which is pragmatically felicitous \cite{Tessler2017, tessler2022warm}, and the meaning of vague adjectives can be modeled using an uncertain threshold-in a way completely analogous to how we have modeled the meaning of generics \cite{Lassiter2015}.
-\mht{where should we have a statement about how pragmatics maybe could determine the comparison class for generics?}
-Therefore, we conclude that quantitative, prevalence information can be at the core of generic meaning, but that such a meaning must be vague and context-sensitive (see also \citeNP{Sterken2015, Nickel2016} for related ideas about context-sensitivity of generics, and see \citeNP{vanRooij2020generics} for a mathematically similar account of generics).
+\subsection{Prevalence priors as an intermediate representation between concepts and natural language semantics}
+
 
 At the same time, generics are known to influence conceptual knowledge.
 The fact that generics refer to abstractions has pinpointed them as potentially central to the growth of conceptual knowledge \cite{Gelman2003, Gelman2009}, such as intuitive or folk theories of biology or psychology \cite{carey1985conceptual, gopnik1997words}. 
@@ -1787,16 +1779,60 @@ Generics can also encode normative beliefs about objects or people \cite{gockeri
 In our model of generics, conceptual changes can occur at a higher level of abstraction above our minimalist, prevalence prior representations of world knowledge (e.g., the prevalence prior may be a lower-level variable in a rich, generative model of kinds and properties \emph{a la} \citeNP{kemp2012integrated}). 
 That is, the prevalence prior is an intermediate representation between conceptual knowledge (e.g., which could encode normative beliefs) and truth-functional natural language semantics with a quantifiable, unified metric to evaluate whether a statement is true or false. 
 Our model does take the strong view that the mechanism by which generics influence conceptual beliefs is via beliefs about prevalence or probability. 
+
+\mht{R4: Additionally, how might prevalence be read off an exemplar/proto-type model?  If the goal is to say that relevant conceptual knowledge can be read out of prevalence priors (which was my understanding of E2's purpose), it might be worthwhile to unpack this. }
+
+\subsection{Implications of generics as a vague quantifier}
+
+A dominant view in psychology is that the meaning of generic statements cannot be reduced to statistical information about the prevalence of the feature in the category \cite<e.g.,>{Leslie2008, Cimpian2010, Khemlani2012, Prasada2013}. 
+This conclusion is often arrived at by authors implicitly considering only fixed-threshold models of a prevalence-based semantics.
+Our formal implementation of models that assume fixed-thresholds support this narrow conclusion, that a fixed-threshold semantics for generics is difficult to support given the data.
+The broader conclusion --- rejecting all possible semantic models based on prevalence --- is not warranted, however (see also \citeNP{kochari2020generics} for a similar argument).
+
+
+
 This view may turn out to be incorrect (e.g., a notion of value could also be a part of the core meaning of generics, as formalized by \citeNP{vanRooij2020generics}), but in our three heterogenous data sets that we have modeled and presented here, we do not see any gap between the uncertain-threshold model predictions and the empirical data, suggesting that prevalence alone in the semantics of generics is sufficient.
+
+
+The meanings of many expressions in natural language depend inextricably on context. 
+For example, gradable adjectives like \emph{tall} or \emph{expensive} do not convey a single precise quantity of height or price (e.g., an expensive watch lies at a different price-point than an expensive hamburger), and yet we do not draw the conclusion that the core meaning of \emph{tall} has nothing to do with height or that the meaning of \emph{expensive} is not really about the price of the object.
+The meanings of gradable adjectives are often arrived at by considering a comparison class of other objects of the same type \cite<e.g., an expensive hamburger is one that has a price that is high relative to other hamburgers;>{Kennedy2007} or which is pragmatically felicitous \cite{Tessler2017, tessler2022warm}, and the meaning of vague adjectives can be modeled using an uncertain threshold-in a way completely analogous to how we have modeled the meaning of generics \cite{Lassiter2015}.
+\mht{where should we have a statement about how pragmatics maybe could determine the comparison class for generics?}
+Therefore, we conclude that quantitative, prevalence information can be at the core of generic meaning, but that such a meaning must be vague and context-sensitive (see also \citeNP{Sterken2015, Nickel2016} for related ideas about context-sensitivity of generics, and see \citeNP{vanRooij2020generics} for a mathematically similar account of generics).
+
+
+\mht{Sensitivity to comparison class}
+\mht{Comparison class can be inferred by pragmatics}
+\mht{Internal, subjective probabilities}
+
+\mht{R4: Also, if this model is intended to be a linking hypothesis it might be useful to discuss if any information might be lost by reducing a generic's interpretation to prevalence.}
+
+
+\subsection{Cognitive plausibility}
+
+\mht{R4: it might be worthwhile to make clear earlier which assumptions are being made because formalizations require assumptions and which are the core components of the model. For example, is marginalization over a threshold intended as a cognitive process and if so is it tractable? }
+
+\mht{R4: Do the authors' expect the belief update works within a person? It would also be good to know if the participants in the the (a) part of the experiments were excluded from the (b) parts and were they excluded from future experiments in the paper?}
+
+
+\subsection{Where does the prevalence prior come from?}
 
 It should be stressed that prevalence knowledge that we identify as central to generic language understanding does not need to come from observing frequencies in the world.
 Prevalence knowledge could itself be learned from language \cite<e.g, through explanations;>{lombrozo2006structure, williams2010role, lombrozo2014explanation} and be informed by more general beliefs, such as intuitive theories about kinds of properties \cite<cf.,>{Keil1979, Nisbett1983}.
 Formalizing the connections between general beliefs, other kinds of language, and generic language via prevalence priors is an important future direction for this line of work.
+
+
+
+
+\mht{R4: There is an independence assumption on properties in the specific cases empirically evaluated and modelled here. After hearing X is a mammal, hearing X can breathe is not the same kind of update. This seems like it would be an important part of a sufficiency claim. If the model is only meant in the specific cases here, it would be worthwhile to discuss why it wouldn't work for other important cases like non-independence. If the model is meant to be broader, it might be worthwhile to expand briefly on how this might be accommodated.}
+
+
 % have to come from eg observing frequencies in the world, but can be learned from language and informed by more general beliefs (like intuitive theories about kinds of properties)
 
 %\ndg{i think we should say a little bit about where prevalence priors might come from, and how for the wider learning problem prevalence priors might also be infulence by generics and other language.... }
 
-\subsection{Generics as a rational vehicle for cultural transmission}
+
+\subsection{Generic language use and understanding as a rational process}
 
 The model we examined closely in this paper was first proposed as a listener model embedded inside of a pragmatic speaker model designed to predict generic endorsements, or truth judgments \cite{Tessler2019psychrev}.
 \citeA{Tessler2019psychrev} showed that the generic endorsement judgments (e.g., do you endorse the statement:  \emph{Mosquitos carry malaria}?) can be predicted by this speaker model deciding whether or not to say the generic to a naive listener, where the naive listener updates its prior beliefs via an uncertain threshold function. 
@@ -1814,6 +1850,48 @@ For features that have difficult-to-understand statistical properties \cite<e.g.
 A second crucial feature of our designs that impact the generalizable of this conclusion is that our studies are all done with adults.
 The usage of generics as a mechanism of transmitting knowledge to children may also result in unfaithful transmission due to different prior beliefs throughout development \cite<e.g.,>{brandone2017changes}.
 Testing the uncertain-threshold model (and the speaker model component in \citeNP{Tessler2019psychrev}) with generics about socially sensitive topics and in development are important future directions for this approach.
+
+
+
+\subsection{Relationship to ``generic belief'' view of generic language}
+
+In our experiments, we predict participants' interpretations of novel generics in terms of prevalence with our computational model as a function of empirical measurements of participants' background knowledge about properties, specifically background knowledge about the prevalence of properties. 
+%The background knowledge elicitation tasks involve reasoning about the properties of alternative categories of animals.
+%In order to elicit this knowledge, however, we conveyed instructions and questions using language. 
+%Thus, there is the potential for circularity in our argument: We are predicting beliefs updated from language via beliefs elicited from language.
+%A close inspection of the prior elicitation questions and our control quantitative models argue against circularity, however. 
+%Our argument is not circular, however, because of the nature of the prior elicitation questions and our control quantitative models, which we describe below.
+In Expt. 1a, we elicited background knowledge by having participants first generate different animal categories and then later rate prevalence for different properties of those animals.
+One might worry that there is a potential for circularity because we are predicting beliefs updated from language (\emph{generic interpretation}; Expt.~1b) via beliefs elicited partly from language (\emph{prevalence prior}; Expt.~1a).
+Perhaps participants answer the prevalence prior questions (e.g., \emph{What percentage of dogs develop phobias?}) by first asking themselves internally a generic question (\emph{Do dogs develop phobias?}) and then  if the answer to this question was \emph{yes}, responding with their personal (already generically-interpreted) prevalence (and rating 0\% prevalence if the answer to the generic question was \emph{no}).
+This procedure would be consistent with a view of generics as representationally primary (as posited by \citeNP{Prasada2000} in the form of \enquote{generic beliefs}) and in which prevalence estimates are derived by these \enquote{generic beliefs}. 
+%Furthermore, under this view, the generic interpretation task (Expt.~1b) reduces to simply reporting back the part of the prior distribution that was generated when participants answered \enquote{yes} to their internally-directed generic question in the prevalence  prior task (\enquote{Do dogs develop phobias?}).
+Under this view, the two experiments would be measuring essentially the same construct, with the latter experiment (\emph{generic interpretation}; Expt.~1b) restricting to  kinds for which there is a ``generic belief'' that the kind has the property. 
+
+%Several aspects of our data argue against this possibility. 
+Our quantitative model comparisons provide evidence against this interpretation.
+First, the \emph{Some} model---which updates the prior by ruling out the 0\% prevalence part of the distribution---is a simple control model that captures the reasoning articulated above: If there is an inherently binary kind of reasoning occurring (\emph{kinds either do not do not [generically] have the property}), we would expect updating the prior by removing the 0\% prevalence part of the distribution to return the prevalence associated with having a ``generic belief''. 
+%Foremost, the prevalence priors do not seem to be a simple mixture of two distributions (e.g., \emph{generically do and do not have the property})---we needed to model each distribution as a mixture of three distributions because they exhibit complex structure. 
+%Second, if the above strategy were that employed by participants, the most accurate model for the generic interpretation data should be the existentially-quantified
+The \emph{Some} model consistently under-predicts the generic interpretation data, however, and was ruled out by model comparison given our data.
+An even more sophisticated version of this hypothesis is formalized by the \emph{Reified kinds} model, which explicitly reasons about the prevalence in a kind of binary fashion: It looks at the prior as a mixture of two distributions (potentially, the presence vs. absence of a ``generic belief'') and selects the distribution with the higher mean prevalence value (the ``generic belief'' is present).
+While the predictions of this model closely track the predictions of the \emph{uncertain-threshold} model for many generics, the \emph{Reified kinds} model over-predicts the prevalence ratings for generics that convey weak interpretations (e.g., \emph{Dorbs live in zoos}) and is ruled out by the data via formal model comparison. 
+In addition, the \emph{Reified kinds} model is unsatisfactory from a theoretical perspective because it ties the meaning of a generic to a particular structural assumption about world knowledge (e.g., the prevalence prior as a mixture distribution). 
+These results support the idea that belief-updating from generics is more nuanced that simply fixing the binary value of a ``generic belief'' node to be true (cf., Prasada, 2000; Csibra and Shamsudheen, 2015).
+Instead, it is most parsimonious to conclude from these experiments that generics update prior beliefs about prevalence in a graded fashion, modeled as an uncertain-threshold rule.
+
+
+\subseciton{Pragmatic reasoning and generic language}
+The \emph{uncertain threshold} model of generic interpretation that we test and validate in this paper is a kind of \emph{Literal Listener} model used in probabilistic models of pragmatic language use (e.g., the Rational Speech Act theory; \citeNP{Frank2012, Goodman2016, problang}). 
+It is noteworthy that we are able to predict the inferences from generics in these experiments without having to articulate a full-blown model of pragmatic reasoning (i.e., a \emph{Pragmatic Listener} model). 
+In the course of this project, we formalized and tested two different versions of a pragmatic listener model.\footnote{Specifically, we formalized a model that treated the threshold variable as a ``lifted'' variable subject to recursive pragmatic reasoning (analogous to \citeA{Lassiter2015}'s model gradable adjective interpretation) and another which marginalized out the threshold variable at the level of the literal listener before engaging in recursive, pragmatic reasoning.}
+The predictions of these pragmatic listener models were only subtly different than the literal listener model and we found that the models provided comparable fits to the data in comparison to our literal listener model, but were penalized in the model comparison due to their additional flexibility in the kinds of data they could predict (i.e., the pragmatic models were more flexible due to their structure and an additional free parameter governing the rationality of the hypothetical speaker who produced the generic). 
+
+Our observation that the predictions of the pragmatic listener models and the literal listener models were only subtly different suggests that an experiment likely needs to be designed specifically to arbitrate between these hypotheses in order to distinguish them.
+Such a paradigm should probably move beyond the artificial, hypothetical situations studied here and in previous work on generic interpretations. 
+For example, an interactive paradigm where a listener can understand that a speaker produced a generic as an intentional action may be more well suited to tap into the perceived intents of the interlocutors. 
+
+
 
 
 %This notion of faithful transmission of knowledge stands in opposition to previous reports of an ``asymmetry'' between endorsements and interpretations \cite{Cimpian2010}. This work, however, relied on an intuitive model for how generics 
@@ -1840,52 +1918,17 @@ Testing the uncertain-threshold model (and the speaker model component in \citeN
 %Instead, our model is analogous to a Lassiter \& Goodman (2017) style model where the threshold variable is only present at the level of the literal listener and is integrated out of the model prior to any pragmatic reasoning. 
 %That being said, the predictions of these two versions of a pragmatic generics model are only very subtly different from one another, and we omit a detailed comparison of these models for brevity. 
 
-\hypertarget{the-relationship-between-prevalence-priors-and-generic-interpretations}{%
-\subsection{The relationship between prevalence priors and generic interpretations}\label{the-relationship-between-prevalence-priors-and-generic-interpretations}}
-
 %{\textcolor{Green}{[ndg: people may worry about circularity of argument, given rich background knowledge elicitation that also uses language (similar to ellen's point). i think we should discuss this directly. relatedly we should discuss the implications of our structured background knowledge (elicitation and results).]}}
 %{\textcolor{Blue}{[mht: does this address it?]}}
 
-In our experiments, we predict participants' interpretations of novel generics in terms of prevalence with our computational model as a function of empirical measurements of participants' background knowledge about properties, specifically background knowledge about the prevalence of properties. 
-%The background knowledge elicitation tasks involve reasoning about the properties of alternative categories of animals.
-%In order to elicit this knowledge, however, we conveyed instructions and questions using language. 
-%Thus, there is the potential for circularity in our argument: We are predicting beliefs updated from language via beliefs elicited from language.
-%A close inspection of the prior elicitation questions and our control quantitative models argue against circularity, however. 
-%Our argument is not circular, however, because of the nature of the prior elicitation questions and our control quantitative models, which we describe below.
-In Expt. 1a, we elicited background knowledge by having participants first generate different animal categories and then later rate prevalence for different properties of those animals.
-One might worry that there is a potential for circularity because we are predicting beliefs updated from language (\emph{generic interpretation}; Expt.~1b) via beliefs elicited partly from language (\emph{prevalence prior}; Expt.~1a).
-Perhaps participants answer the prevalence prior questions (e.g., \emph{What percentage of dogs develop phobias?}) by first asking themselves internally a generic question (\emph{Do dogs develop phobias?}) and then  if the answer to this question was \emph{yes}, responding with their personal (already generically-interpreted) prevalence (and rating 0\% prevalence if the answer to the generic question was \emph{no}).
-This procedure would be consistent with a view of generics as representationally primary (as posited by \citeNP{Prasada2000} in the form of \enquote{generic beliefs}) and in which prevalence estimates are derived by these \enquote{generic beliefs}. 
-%Furthermore, under this view, the generic interpretation task (Expt.~1b) reduces to simply reporting back the part of the prior distribution that was generated when participants answered \enquote{yes} to their internally-directed generic question in the prevalence  prior task (\enquote{Do dogs develop phobias?}).
-Under this view, the two experiments would be measuring essentially the same construct, with the latter experiment (\emph{generic interpretation}; Expt.~1b) restricting to  kinds for which there is a ``generic belief'' that the kind has the property. 
 
-%Several aspects of our data argue against this possibility. 
-Our quantitative model comparisons provide evidence against this interpretation.
-First, the \emph{Some} model---which updates the prior by ruling out the 0\% prevalence part of the distribution---is a simple control model that captures the reasoning articulated above: If there is an inherently binary kind of reasoning occurring (\emph{kinds either do not do not [generically] have the property}), we would expect updating the prior by removing the 0\% prevalence part of the distribution to return the prevalence associated with having a ``generic belief''. 
-%Foremost, the prevalence priors do not seem to be a simple mixture of two distributions (e.g., \emph{generically do and do not have the property})---we needed to model each distribution as a mixture of three distributions because they exhibit complex structure. 
-%Second, if the above strategy were that employed by participants, the most accurate model for the generic interpretation data should be the existentially-quantified
-The \emph{Some} model consistently under-predicts the generic interpretation data, however, and was ruled out by model comparison given our data.
-An even more sophisticated version of this hypothesis is formalized by the \emph{Reified kinds} model, which explicitly reasons about the prevalence in a kind of binary fashion: It looks at the prior as a mixture of two distributions (potentially, the presence vs. absence of a ``generic belief'') and selects the distribution with the higher mean prevalence value (the ``generic belief'' is present).
-While the predictions of this model closely track the predictions of the \emph{uncertain-threshold} model for many generics, the \emph{Reified kinds} model over-predicts the prevalence ratings for generics that convey weak interpretations (e.g., \emph{Dorbs live in zoos}) and is ruled out by the data via formal model comparison. 
-In addition, the \emph{Reified kinds} model is unsatisfactory from a theoretical perspective because it ties the meaning of a generic to a particular structural assumption about world knowledge (e.g., the prevalence prior as a mixture distribution). 
-These results support the idea that belief-updating from generics is more nuanced that simply fixing the binary value of a ``generic belief'' node to be true (cf., Prasada, 2000; Csibra and Shamsudheen, 2015).
-Instead, it is most parsimonious to conclude from these experiments that generics update prior beliefs about prevalence in a graded fashion, modeled as an uncertain-threshold rule.
 %If this were the case, there are only two possibilities for participants' beliefs---the category either does or does not (generically) have the property---and the generic interpretation task 
 %
 %
 %The fact that the \enquote{some} model consistently underpredicts the generic interpretation data argues against the circularity in our measurements of the prevalence prior and generic interpretations.
 
 
-\subsection{Generics and pragmatics}
 
-The \emph{uncertain threshold} model of generic interpretation that we test and validate in this paper is a kind of \emph{Literal Listener} model used in probabilistic models of pragmatic language use (e.g., the Rational Speech Act theory; \citeNP{Frank2012, Goodman2016, problang}). 
-It is noteworthy that we are able to predict the inferences from generics in these experiments without having to articulate a full-blown model of pragmatic reasoning (i.e., a \emph{Pragmatic Listener} model). 
-In the course of this project, we formalized and tested two different versions of a pragmatic listener model.\footnote{Specifically, we formalized a model that treated the threshold variable as a ``lifted'' variable subject to recursive pragmatic reasoning (analogous to \citeA{Lassiter2015}'s model gradable adjective interpretation) and another which marginalized out the threshold variable at the level of the literal listener before engaging in recursive, pragmatic reasoning.}
-The predictions of these pragmatic listener models were only subtly different than the literal listener model and we found that the models provided comparable fits to the data in comparison to our literal listener model, but were penalized in the model comparison due to their additional flexibility in the kinds of data they could predict (i.e., the pragmatic models were more flexible due to their structure and an additional free parameter governing the rationality of the hypothetical speaker who produced the generic). 
-
-Our observation that the predictions of the pragmatic listener models and the literal listener models were only subtly different suggests that an experiment likely needs to be designed specifically to arbitrate between these hypotheses in order to distinguish them.
-Such a paradigm should probably move beyond the artificial, hypothetical situations studied here and in previous work on generic interpretations. 
-For example, an interactive paradigm where a listener can understand that a speaker produced a generic as an intentional action may be more well suited to tap into the perceived intents of the interlocutors. 
 
 
 
