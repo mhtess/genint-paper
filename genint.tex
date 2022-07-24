@@ -1754,12 +1754,9 @@ Finally, we found that the background knowledge about the expected prevalence of
 % interprets generics pragmatically provides a better explanation of the observed data than a literal interpretation model.
 This work validates a rational, computational formalism articulating how beliefs are updated from generic language, which appears to be adequate within the domains considered; it represents a first step in understanding how generics serve to convey knowledge between people and across generations.
 
-
-%
 The experimental data we present shows that generics can receive a systematic spectrum of prevalence-based interpretations, including being interpreted as only applying to a minority of the category (what we might call \emph{weak generics}). 
-Statements like \emph{Lorches live in zoos}, \emph{Feps perform in the circus}, and \emph{Wugs have seizures} all received average implied prevalence ratings below 50\%, with many individual participants providing ratings of 10\% or less (Expt. 1b).
+Statements like \emph{Lorches live in zoos}, \emph{Feps perform in the circus}, and \emph{Wugs have seizures} all received average implied prevalence ratings below 50\%, with many individual ratings of 10\% or less (Expt. 1b).
 When manipulating the prevalence prior distributions to suggest only prevalence levels of around 0\% or around 25\%, participants readily interpreted the statement \emph{Ks know when earthquakes are about to happen} to mean only about a quarter of them do (Expt. 3b).
-%These nuanced interpretations are an aspect of generic language understanding often swept under the rug: Generics are believed (in a generic sense) to carry strong implications.
 These results highlight the variety of generic interpretations, which stand in contrast to a common view in the psychological literature on generics that generics (in a generic sense) convey monolithic, strong meanings.
 We further trace the variability of generic interpretations to more general prior beliefs, demonstrating how generics can convey strong implications, weak implications, and all shades in-between.\footnote{
 The response measure we use in our paradigm, as in the previous paradigms on generic interpretations, might encourage gradience even if gradience was limited.
@@ -1767,64 +1764,105 @@ For example, \citeA{armstrong1983some} showed that one can elicit gradience from
 Gradience in property prevalence interpretations (e.g., how many wugs have seizures), which we examine in this paper, is distinct, however, from gradience in property knowledge (e.g., whether or not an individual instance or episode could be a gradient exemplar of a property such as a seizure). Our results cannot speak as to whether or not property knowledge \emph{per se} is gradient, just that knowledge of prevalence is gradient. Prevalence knowledge being gradient is not particularly surprising given that the underlying construct is itself gradient (i.e., prevalence is a probability or frequency, which is a number between 0 - 1). 
 }
 
-
-
-
-\subsection{Prevalence priors as an intermediate representation between concepts and natural language semantics}
-
-
-At the same time, generics are known to influence conceptual knowledge.
-The fact that generics refer to abstractions has pinpointed them as potentially central to the growth of conceptual knowledge \cite{Gelman2003, Gelman2009}, such as intuitive or folk theories of biology or psychology \cite{carey1985conceptual, gopnik1997words}. 
-Generics can also encode normative beliefs about objects or people \cite{gockeritz2014young, roberts2017group, orvell2018s}. 
-In our model of generics, conceptual changes can occur at a higher level of abstraction above our minimalist, prevalence prior representations of world knowledge (e.g., the prevalence prior may be a lower-level variable in a rich, generative model of kinds and properties \emph{a la} \citeNP{kemp2012integrated}). 
-That is, the prevalence prior is an intermediate representation between conceptual knowledge (e.g., which could encode normative beliefs) and truth-functional natural language semantics with a quantifiable, unified metric to evaluate whether a statement is true or false. 
-Our model does take the strong view that the mechanism by which generics influence conceptual beliefs is via beliefs about prevalence or probability. 
-
-\mht{R4: Additionally, how might prevalence be read off an exemplar/proto-type model?  If the goal is to say that relevant conceptual knowledge can be read out of prevalence priors (which was my understanding of E2's purpose), it might be worthwhile to unpack this. }
-
 \subsection{Implications of generics as a vague quantifier}
 
 A dominant view in psychology is that the meaning of generic statements cannot be reduced to statistical information about the prevalence of the feature in the category \cite<e.g.,>{Leslie2008, Cimpian2010, Khemlani2012, Prasada2013}. 
 This conclusion is often arrived at by authors implicitly considering only fixed-threshold models of a prevalence-based semantics.
 Our formal implementation of models that assume fixed-thresholds support this narrow conclusion, that a fixed-threshold semantics for generics is difficult to support given the data.
 The broader conclusion --- rejecting all possible semantic models based on prevalence --- is not warranted, however (see also \citeNP{kochari2020generics} for a similar argument).
-
-
-
-This view may turn out to be incorrect (e.g., a notion of value could also be a part of the core meaning of generics, as formalized by \citeNP{vanRooij2020generics}), but in our three heterogenous data sets that we have modeled and presented here, we do not see any gap between the uncertain-threshold model predictions and the empirical data, suggesting that prevalence alone in the semantics of generics is sufficient.
-
+Instead, we present a view where generics are a kind of vague quantifier, which have the defining features of being vague, sensitive to a comparison class, and which quantify over subjective probabilities (cf., \citeNP{Sterken2015, Nickel2016} for related ideas about vagueness and context-sensitivities). 
 
 The meanings of many expressions in natural language depend inextricably on context. 
-For example, gradable adjectives like \emph{tall} or \emph{expensive} do not convey a single precise quantity of height or price (e.g., an expensive watch lies at a different price-point than an expensive hamburger), and yet we do not draw the conclusion that the core meaning of \emph{tall} has nothing to do with height or that the meaning of \emph{expensive} is not really about the price of the object.
-The meanings of gradable adjectives are often arrived at by considering a comparison class of other objects of the same type \cite<e.g., an expensive hamburger is one that has a price that is high relative to other hamburgers;>{Kennedy2007} or which is pragmatically felicitous \cite{Tessler2017, tessler2022warm}, and the meaning of vague adjectives can be modeled using an uncertain threshold-in a way completely analogous to how we have modeled the meaning of generics \cite{Lassiter2015}.
-\mht{where should we have a statement about how pragmatics maybe could determine the comparison class for generics?}
-Therefore, we conclude that quantitative, prevalence information can be at the core of generic meaning, but that such a meaning must be vague and context-sensitive (see also \citeNP{Sterken2015, Nickel2016} for related ideas about context-sensitivity of generics, and see \citeNP{vanRooij2020generics} for a mathematically similar account of generics).
+A paradigmatic example is that of gradable adjectives like \emph{tall} or \emph{expensive}.
+Gradable adjectives have two defining qualities: They are vague and they are context-sensitive \cite{Kennedy2007}. 
+Vagueness comes about by there not being a strict threshold beyond which the adjective is true or false (e.g., there is no single dollar amount above which a watch is expensive and below which a watch is not expensive).
+Similarly, our meaning for generics (that they convey that the prevalence is greater than some threshold) is also vague: there is no single threshold above which the generic is true.
+In fact, the same uncertain threshold technique that we used here is used as a way to model the vagueness of gradable adjectives \cite{Lassiter2015}.
+
+Context-sensitivity is the second defining quality of gradable adjectives: an expensive watch lies in a completely different price range than an expensive hamburger or an expensive pack of gum.
+Formally, this context-sensitivity is typically modeled as considering a comparison class of typically other objects of the same type \cite<e.g., an expensive hamburger is one that has a price that is high relative to other hamburgers;>{Kennedy2007}.
+Our prevalence prior encodes this comparison class assumption: in our experimental tests, the prevalence prior was constructed by considering a comparison class of \emph{other animals}.
+How does a listener know that the comparison class should be \emph{other animals}, and not, say, \emph{other objects} or \emph{other entities}?
+The problem of determining an appropriate comparison class is a general problem shared with other context-sensitive language, including gradable adjectives and vague quantifers like \emph{many} or \emph{a lot} \cite{...}.
+Recently, we have shown that pragmatic reasoning, formalized in a similar model of language understanding, can be used to flexibly adjust the comparison class for interpreting gradable adjectives depending on the context \cite{Tessler2017, tessler2022warm}.
+Future research should examine whether the same processes underly comparison class inferences when interperting generic language.
+
+In addition to vagueness and context-sensitivity, the view of generics as a vague quantifier has a third feature that has implications for the study of generics: generics quantify over subjective, predictive probabilities.
+Our view of generics is that they quantify (vaguely, context-sensitively) over probabilities or prevalences.
+Though in these experiments, we did not try to discern the nature of these probabilities, in earlier work, we showed how human truth judgments are sensitive participants subjective, predictive probabilities and not the particular ground-truth statistics concerning prevalence \cite{Tessler2019psychrev}. 
+This view can help explain why certain generics sound odd or false, even though the prevalence within the appropriate comparison class seems to suggest they should be true. 
+A canonical example is \emph{Primary school teachers are female}, which is a statement that conventionally is considered false (or is rejected) even though most primary school teachers are in fact female (and more primary school teachers are female in comparison to other sets of teachers, or even many other professions). 
+If a speaker believes that in the future, the probability that a primary school teacher will be female is close to 0.5 (i.e., there is no systematic gender bias in hiring), then the statement statement would be considered false or infelicitious under our model, similar to how it treats \emph{Birds are female} (cf., long-run frequencies in \citeNP{Cohen1999}'s theory of generics).
+This fact that generics convey subjective probabilities may be the source of normative inferences from generics \cite{gockeritz2014young, roberts2017group, orvell2018s}: For example, it may be a fine line between an inference that the speaker believes the future probability is high with the inference that the speaker believes the future probability should be high.
+Future work should examine the relationship between subjective, predictive probabilities and normative inferences from generics.
+% teachers are female.
+
+To summarize this section, our view is that quantitative, prevalence information can be at the core of generic meaning, but that such a meaning must be vague, context-sensitive, and concern subjective, predictive probabilities (see also \citeNP{Sterken2015, Nickel2016} for related ideas about context-sensitivity of generics, and see \citeNP{vanRooij2020generics} for a mathematically similar account of generics).
+One prominanent feature of other views of generics that is not a part of our core theory is that of a notion of value in the core meaning of generics \cite<e.g.,>{vanRooij2020generics}.
+Subjective value can enter into speaker and listener behavior in our framework (e.g., as it does in the case of polite language use; \citeNP{yoon2020politeness}), but it is not a part of our core theory of the meaning of generics. 
+Future studies should examine how notions of subjective value influence human inferences from generics and how best to model these effects.
+%but in our three heterogenous data sets that we have modeled and presented here, we do not see any gap between the uncertain-threshold model predictions and the empirical data, suggesting that prevalence alone in the semantics of generics is sufficient.
 
 
-\mht{Sensitivity to comparison class}
-\mht{Comparison class can be inferred by pragmatics}
-\mht{Internal, subjective probabilities}
+\subsection{Prevalence priors as an intermediate representation between concepts and natural language semantics}
 
-\mht{R4: Also, if this model is intended to be a linking hypothesis it might be useful to discuss if any information might be lost by reducing a generic's interpretation to prevalence.}
+In our model of generics, the prevalence priors are a kind of minimal, abstract representation that lies in between rich, conceptual knowledge and natural language semantics.
+The natural language semantic theory we examine here grounds out in the unified, quantifiable representation of beliefs as probabilities. 
+Those probabilities are sampled from a prior disribution over prevalence, which we have conceived as being formed by knowledge of other categories within a comparison class.
+A prior distribution over prevalence, however, can be thought of more generally as a marginal distribution over prevalence given some background knowledge.
+
+For example, taxonomic category knowledge that enables inductive generalizations across levels of a heirarchy can be learned given a grammar-based prior over category relations \cite{kemp2008}. 
+Such a probabilisitic generative model has both conceptual knowledge encoded through the structure of the model and statistical information encoded with probabilities that tie together different parts of the structure.
+In such a model, a prevalence prior could be constructed via marginalization over categorical or structural variables. 
+With this kind of richer represention of kinds and properties (e.g., \citeNP{kemp2012integrated}), it is possible that rich conceptual knowledge \cite<\emph{a la}{Gelman2003, Gelman2009}, not just prevalence, could be learned with our formal prevalence-based meaning for generics. 
+Future work should examine the kinds of information other than prevalence that are communicated by generics, and how such richer conceptual models can be elaborated to account for these effects without throwing out the prevalence prior and vague threshold semantic representations.
 
 
-\subsection{Cognitive plausibility}
 
-\mht{R4: it might be worthwhile to make clear earlier which assumptions are being made because formalizations require assumptions and which are the core components of the model. For example, is marginalization over a threshold intended as a cognitive process and if so is it tractable? }
+%that is not captured 
+
+%full-blown intuitive theories could be learned via a rich
+
+%In a probabilistic generative model of kinds and properties (e.g., \citeNP{kemp2012integrated}), one would have %Much of the psychological literature on generics has looked beyond statistical information to examine the influence of generics on conceptual knowledge. 
+%The fact that generics refer to abstractions has pinpointed them as potentially central to the growth of conceptual knowledge \cite{Gelman2003, Gelman2009}, such as intuitive or folk theories of biology or psychology \cite{carey1985conceptual, gopnik1997words}. 
+%Generics can also communicative normative beliefs about objects or people \cite{gockeritz2014young, roberts2017group, orvell2018s}. 
+
+
+%  conceptual changes can occur at a higher level of abstraction above our minimalist, prevalence prior representations of world knowledge (e.g., the prevalence prior may be a lower-level variable in a rich, generative model of kinds and properties \emph{a la} \citeNP{kemp2012integrated}). 
+% That is, the prevalence prior is an intermediate representation between conceptual knowledge (e.g., which could encode normative beliefs) and truth-functional natural language semantics with a quantifiable, unified metric to evaluate whether a statement is true or false. 
+% Our model does take the strong view that the mechanism by which generics influence conceptual beliefs is via beliefs about prevalence or probability. 
+
+\mht{R4: Additionally, how might prevalence be read off an exemplar/proto-type model?  If the goal is to say that relevant conceptual knowledge can be read out of prevalence priors (which was my understanding of E2's purpose), it might be worthwhile to unpack this. }
+
+%\mht{R4: Also, if this model is intended to be a linking hypothesis it might be useful to discuss if any information might be lost by reducing a generic's interpretation to prevalence.}
+
+
+\subsection{Cognitive plausibility considerations}
+
+Our model of generic language understanding is a rational model in the mold of \citeA{Anderson1990} and \cite{Marr1980}. 
+Thus, the computations in the model are not intended to be literal cognitive processes that an individual person is calculating. 
+For example, people may not explicitly represent the threshold variable and be reasoning about different thresholds when understanding generics. 
+Still, the threshold formalization is useful because it makes an explicit connection to the field of formal smenatics and highlights the continuity in representation with other linguistic expressions such as vague quantifiers and gradable adjectives. 
+
+At the same time, rational models of pragmatic reasoning have been shown to be useful models for purposes of studying individual differences \cite{DegenFranke, Bohn}.
+Our model here is no different. For example, one could see whether inferences that are sensitive to the comparison class are also individual-specific such that if different people have different comparison classes in mind, or have different statistical knowledge of the comparison class, whether that manifests in their inferences from generics. 
+
+%\mht{R4: it might be worthwhile to make clear earlier which assumptions are being made because formalizations require assumptions and which are the core components of the model. For example, is marginalization over a threshold intended as a cognitive process and if so is it tractable?}
 
 \mht{R4: Do the authors' expect the belief update works within a person? It would also be good to know if the participants in the the (a) part of the experiments were excluded from the (b) parts and were they excluded from future experiments in the paper?}
 
 
 \subsection{Where does the prevalence prior come from?}
 
-It should be stressed that prevalence knowledge that we identify as central to generic language understanding does not need to come from observing frequencies in the world.
+As discussed above, the prevalence prior representation we have considered in this paper is constructed by considering a comparison class of \emph{other animals} and using one's knowledge of prevalence in other categories to construct a marginal distribution on prevalence for a specific property. 
+This knowledge of prevalence in other categories does not need to come from observing frequencies in the world (e.g., as done in Expt. 3).
 Prevalence knowledge could itself be learned from language \cite<e.g, through explanations;>{lombrozo2006structure, williams2010role, lombrozo2014explanation} and be informed by more general beliefs, such as intuitive theories about kinds of properties \cite<cf.,>{Keil1979, Nisbett1983}.
 Formalizing the connections between general beliefs, other kinds of language, and generic language via prevalence priors is an important future direction for this line of work.
 
+In our experiments and modeling results, we make use of an implicit assumption that properties are independent by studying single generic statements about new categories. For example, in Expt. 1, a participant may learn that \emph{Glippets live in urban areas}, but this is the only fact they learned about the category \emph{glippets}. If, instead, they additionally learned that \emph{Glippets fly into building windows}, then we might have challenged the assumption that the properties are indepedent of one another. That is, the kind of belief updating that occurs from \emph{Glippets fly into building windows} after first learning that \emph{Glippets live in urban areas} is conceivably different than the belief updating that occurs from only learning that \emph{Glippets fly into building windows}.\footnote{We thank an anonymous reviewer for pointing out this independence assumption.} To account for non-independence, we would need to formalize more explicitly a generative model of properties and kinds (\emph{a la} \citeNP{kemp2012}) and connect it to our prevalence prior-based generic intepretation model. Such a formalization is a natural next step for this line of work.
 
 
-
-\mht{R4: There is an independence assumption on properties in the specific cases empirically evaluated and modelled here. After hearing X is a mammal, hearing X can breathe is not the same kind of update. This seems like it would be an important part of a sufficiency claim. If the model is only meant in the specific cases here, it would be worthwhile to discuss why it wouldn't work for other important cases like non-independence. If the model is meant to be broader, it might be worthwhile to expand briefly on how this might be accommodated.}
+%\mht{R4: There is an independence assumption on properties in the specific cases empirically evaluated and modelled here. After hearing X is a mammal, hearing X can breathe is not the same kind of update. This seems like it would be an important part of a sufficiency claim. If the model is only meant in the specific cases here, it would be worthwhile to discuss why it wouldn't work for other important cases like non-independence. If the model is meant to be broader, it might be worthwhile to expand briefly on how this might be accommodated.}
 
 
 % have to come from eg observing frequencies in the world, but can be learned from language and informed by more general beliefs (like intuitive theories about kinds of properties)
@@ -1851,11 +1889,9 @@ A second crucial feature of our designs that impact the generalizable of this co
 The usage of generics as a mechanism of transmitting knowledge to children may also result in unfaithful transmission due to different prior beliefs throughout development \cite<e.g.,>{brandone2017changes}.
 Testing the uncertain-threshold model (and the speaker model component in \citeNP{Tessler2019psychrev}) with generics about socially sensitive topics and in development are important future directions for this approach.
 
-
-
 \subsection{Relationship to ``generic belief'' view of generic language}
 
-In our experiments, we predict participants' interpretations of novel generics in terms of prevalence with our computational model as a function of empirical measurements of participants' background knowledge about properties, specifically background knowledge about the prevalence of properties. 
+In our experiments, we predicted participants' interpretations of novel generics in terms of prevalence with our computational model as a function of empirical measurements of participants' background knowledge about properties, specifically background knowledge about the prevalence of properties. 
 %The background knowledge elicitation tasks involve reasoning about the properties of alternative categories of animals.
 %In order to elicit this knowledge, however, we conveyed instructions and questions using language. 
 %Thus, there is the potential for circularity in our argument: We are predicting beliefs updated from language via beliefs elicited from language.
