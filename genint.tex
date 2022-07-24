@@ -736,6 +736,7 @@ Thus, we will assume the prevalence prior data follow a mixture of 2-Beta distri
 We recruited 200 participants from MTurk.
 This number was arrived at with the intention of getting approximately 50 ratings for each unique item in the experiment.\footnote{The intended number of ratings in this experiment is smaller than the corresponding number of ratings in the prior elicitation task (Expt.~1a), which was approximately twice as many. In the prior task, we were eliciting multimodal distributions, which require more samples  to approximate faithfully than unimodal distributions, which we anticipated for this generic interpretation task.}
 The experiment took on average 5.50 minutes and participants were compensated \$0.80.
+Participants who completed Expt.~1a were barred from participating in Expt.~1b.
 
 \hypertarget{procedure-and-materials-2}{%
 \paragraph{Procedure and materials}\label{procedure-and-materials-2}}
@@ -1517,6 +1518,7 @@ The sample size, exclusion criteria, and planned statistical contrasts were all 
 We recruited 600 participants from MTurk.
 This number was arrived at with the intention of getting approximately 50 ratings for each unique condition in the experiment.
 The experiment took on average 2.70 minutes and participants were compensated \$0.30.
+Participants who completed Expt.~3a were barred from participating in Expt.~3b.
 
 \hypertarget{materials-and-procedure}{%
 \paragraph{Materials and procedure}\label{materials-and-procedure}}
@@ -1783,8 +1785,8 @@ Context-sensitivity is the second defining quality of gradable adjectives: an ex
 Formally, this context-sensitivity is typically modeled as considering a comparison class of typically other objects of the same type \cite<e.g., an expensive hamburger is one that has a price that is high relative to other hamburgers;>{Kennedy2007}.
 Our prevalence prior encodes this comparison class assumption: in our experimental tests, the prevalence prior was constructed by considering a comparison class of \emph{other animals}.
 How does a listener know that the comparison class should be \emph{other animals}, and not, say, \emph{other objects} or \emph{other entities}?
-The problem of determining an appropriate comparison class is a general problem shared with other context-sensitive language, including gradable adjectives and vague quantifers like \emph{many} or \emph{a lot} \cite{...}.
-Recently, we have shown that pragmatic reasoning, formalized in a similar model of language understanding, can be used to flexibly adjust the comparison class for interpreting gradable adjectives depending on the context \cite{Tessler2017, tessler2022warm}.
+The problem of determining an appropriate comparison class is a general problem shared with other context-sensitive language, including gradable adjectives and vague quantifers like \emph{many} or \emph{a lot} \cite{Kennedy2007, scholler2017semantic}
+Recently, it has been shown that pragmatic reasoning, formalized in a similar model of language understanding, can be used to flexibly adjust the comparison class for interpreting gradable adjectives depending on the context \cite{Tessler2017, tessler2022warm}.
 Future research should examine whether the same processes underly comparison class inferences when interperting generic language.
 
 In addition to vagueness and context-sensitivity, the view of generics as a vague quantifier has a third feature that has implications for the study of generics: generics quantify over subjective, predictive probabilities.
@@ -1799,7 +1801,7 @@ Future work should examine the relationship between subjective, predictive proba
 
 To summarize this section, our view is that quantitative, prevalence information can be at the core of generic meaning, but that such a meaning must be vague, context-sensitive, and concern subjective, predictive probabilities (see also \citeNP{Sterken2015, Nickel2016} for related ideas about context-sensitivity of generics, and see \citeNP{vanRooij2020generics} for a mathematically similar account of generics).
 One prominanent feature of other views of generics that is not a part of our core theory is that of a notion of value in the core meaning of generics \cite<e.g.,>{vanRooij2020generics}.
-Subjective value can enter into speaker and listener behavior in our framework (e.g., as it does in the case of polite language use; \citeNP{yoon2020politeness}), but it is not a part of our core theory of the meaning of generics. 
+Subjective value can enter into speaker and listener behavior in our framework (e.g., as it does in the case of polite language use; \citeNP{yoon2020polite}), but it is not a part of our core theory of the meaning of generics. 
 Future studies should examine how notions of subjective value influence human inferences from generics and how best to model these effects.
 %but in our three heterogenous data sets that we have modeled and presented here, we do not see any gap between the uncertain-threshold model predictions and the empirical data, suggesting that prevalence alone in the semantics of generics is sufficient.
 
@@ -1811,7 +1813,7 @@ The natural language semantic theory we examine here grounds out in the unified,
 Those probabilities are sampled from a prior disribution over prevalence, which we have conceived as being formed by knowledge of other categories within a comparison class.
 A prior distribution over prevalence, however, can be thought of more generally as a marginal distribution over prevalence given some background knowledge.
 
-For example, taxonomic category knowledge that enables inductive generalizations across levels of a heirarchy can be learned given a grammar-based prior over category relations \cite{kemp2008}. 
+For example, taxonomic category knowledge that enables inductive generalizations across levels of a heirarchy can be learned given a grammar-based prior over category relations \cite{Kemp2008}. 
 Such a probabilisitic generative model has both conceptual knowledge encoded through the structure of the model and statistical information encoded with probabilities that tie together different parts of the structure.
 In such a model, a prevalence prior could be constructed via marginalization over categorical or structural variables. 
 With this kind of richer represention of kinds and properties (e.g., \citeNP{kemp2012integrated}), it is possible that rich conceptual knowledge \cite<\emph{a la}{Gelman2003, Gelman2009}, not just prevalence, could be learned with our formal prevalence-based meaning for generics. 
@@ -1839,12 +1841,12 @@ Future work should examine the kinds of information other than prevalence that a
 
 \subsection{Cognitive plausibility considerations}
 
-Our model of generic language understanding is a rational model in the mold of \citeA{Anderson1990} and \cite{Marr1980}. 
+Our model of generic language understanding is a rational model in the mold of \citeA{Anderson1991} and \citeA{Marr1980}. 
 Thus, the computations in the model are not intended to be literal cognitive processes that an individual person is calculating. 
 For example, people may not explicitly represent the threshold variable and be reasoning about different thresholds when understanding generics. 
 Still, the threshold formalization is useful because it makes an explicit connection to the field of formal smenatics and highlights the continuity in representation with other linguistic expressions such as vague quantifiers and gradable adjectives. 
 
-At the same time, rational models of pragmatic reasoning have been shown to be useful models for purposes of studying individual differences \cite{DegenFranke, Bohn}.
+At the same time, rational models of pragmatic reasoning have been shown to be useful models for purposes of studying individual differences \cite{franke2016reasoning, bohn2022individual, bohn2022modeling}.
 Our model here is no different. For example, one could see whether inferences that are sensitive to the comparison class are also individual-specific such that if different people have different comparison classes in mind, or have different statistical knowledge of the comparison class, whether that manifests in their inferences from generics. 
 
 %\mht{R4: it might be worthwhile to make clear earlier which assumptions are being made because formalizations require assumptions and which are the core components of the model. For example, is marginalization over a threshold intended as a cognitive process and if so is it tractable?}
